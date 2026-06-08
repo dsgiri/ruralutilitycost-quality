@@ -1,8 +1,14 @@
 import { Mail, MessageSquare } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Contact() {
   return (
     <div className="py-16 md:py-24 bg-white">
+      <SEO 
+        title="Contact" 
+        description="Get in touch with the Quality hub team at Rural Utility Cost for questions or support regarding our agricultural QA tools."
+        url="https://quality.ruralutilitycost.com/contact"
+      />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-slate-900 mb-8 tracking-tight">Contact</h1>
         

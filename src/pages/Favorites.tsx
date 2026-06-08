@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { TOOLS } from '../data';
 import ToolCard from '../components/ToolCard';
+import SEO from '../components/SEO';
 import { QualityTool } from '../types';
 import { Heart, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -31,6 +32,11 @@ export default function Favorites() {
 
   return (
     <div className="py-12 md:py-20 bg-slate-50 min-h-full">
+      <SEO 
+        title="My Favorites" 
+        description="Your saved quality assurance and control tools from the Rural Utility Cost hub."
+        url="https://quality.ruralutilitycost.com/favorites"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
           <Link to="/" className="inline-flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors mb-6">

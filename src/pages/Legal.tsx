@@ -1,6 +1,13 @@
+import SEO from '../components/SEO';
+
 export default function Legal() {
   return (
     <div className="py-16 md:py-24 bg-white">
+      <SEO 
+        title="Legal & Disclaimers" 
+        description="Important legal information, terms of use, privacy policy, and disclaimers for the Quality tools on Rural Utility Cost."
+        url="https://quality.ruralutilitycost.com/legal"
+      />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-slate-900 mb-8 tracking-tight">Legal & Disclaimers</h1>
         

@@ -1,6 +1,13 @@
+import SEO from '../components/SEO';
+
 export default function About() {
   return (
     <div className="py-16 md:py-24 bg-white">
+      <SEO 
+        title="About Quality Hub" 
+        description="Learn about the Quality app, a dedicated hub within the Rural Utility Cost master ecosystem focusing on quality assurance for food and feed."
+        url="https://quality.ruralutilitycost.com/about"
+      />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-slate-900 mb-8 tracking-tight">About Quality</h1>
         

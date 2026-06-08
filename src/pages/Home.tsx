@@ -1,10 +1,22 @@
 import { TOOLS } from '../data';
 import ToolCard from '../components/ToolCard';
+import AdContainer from '../components/AdContainer';
+import SEO from '../components/SEO';
+import { trackClick } from '../utils/analytics';
 import { ShieldCheck, Target, ArrowRight } from 'lucide-react';
 
 export default function Home() {
+  const handleToolsClick = () => {
+    trackClick('explore_tools_btn');
+  };
+
   return (
     <div className="w-full">
+      <SEO 
+        title="Quality Tools & Checklists" 
+        description="Standardize your quality operations with practical tools designed for feed, food, and agricultural producers."
+        url="https://quality.ruralutilitycost.com/"
+      />
       {/* Hero Section */}
       <section className="bg-slate-900 bg-opacity-95 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM5QzkyQUMiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djI2SDI0VjM0SDFWMjJoMjNWMGgxMnYyMmgzNXYxMkgzNnoiLz48L2c+PC9nPjwvc3ZnPg==')] pointer-events-none"></div>
@@ -21,10 +33,10 @@ export default function Home() {
               Standardize your quality operations with practical tools designed for feed, food, and agricultural producers. Maintain batch consistency and prepare for confident releases.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="#tools" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-slate-900 bg-emerald-400 hover:bg-emerald-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 focus:ring-emerald-500 transition-colors shadow-sm">
+              <a href="#tools" onClick={handleToolsClick} className="inline-flex items-center min-h-[48px] justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-slate-900 bg-emerald-400 hover:bg-emerald-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 focus:ring-emerald-500 transition-colors shadow-sm">
                 Explore Quality Tools
               </a>
-              <a href="/about" className="inline-flex items-center justify-center px-6 py-3 border border-slate-600 text-base font-medium rounded-lg text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 focus:ring-slate-500 transition-colors">
+              <a href="/about" onClick={() => trackClick('learn_how_quality_works_btn')} className="inline-flex items-center min-h-[48px] justify-center px-6 py-3 border border-slate-600 text-base font-medium rounded-lg text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 focus:ring-slate-500 transition-colors">
                 Learn How Quality Works
               </a>
             </div>
@@ -51,6 +63,10 @@ export default function Home() {
             {TOOLS.map((tool) => (
               <ToolCard key={tool.id} tool={tool} />
             ))}
+          </div>
+
+          <div className="mt-12">
+            <AdContainer slotId="home-tools-bottom" format="auto" />
           </div>
         </div>
       </section>
