@@ -24,6 +24,16 @@ export default function ReleaseReadinessChecklist() {
         title="Release Readiness Checklist | Quality Hub" 
         description="Final verification steps to ensure product meets all criteria before shipping."
         url="https://quality.ruralutilitycost.com/tools/release-readiness-checklist"
+        keywords="release readiness, product shipping checklist, QA sign-off, quality verification, product release checklist"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Release Readiness Checklist",
+          "url": "https://quality.ruralutilitycost.com/tools/release-readiness-checklist",
+          "description": "Final verification steps to ensure product meets all criteria before shipping.",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "All"
+        }}
       />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">

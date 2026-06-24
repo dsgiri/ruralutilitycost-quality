@@ -106,6 +106,16 @@ export default function BatchConsistencyTracker() {
         title="Batch Consistency Tracker | Quality Hub" 
         description="Monitor variations across production batches to ensure uniform quality standards."
         url="https://quality.ruralutilitycost.com/tools/batch-consistency-tracker"
+        keywords="batch consistency, production variance, moisture tracking, protein tracking, quality control, manufacturing consistency"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Batch Consistency Tracker",
+          "url": "https://quality.ruralutilitycost.com/tools/batch-consistency-tracker",
+          "description": "Monitor variations across production batches to ensure uniform quality standards.",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "All"
+        }}
       />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">

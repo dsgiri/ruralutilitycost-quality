@@ -84,6 +84,16 @@ export default function ContaminationRiskChecker() {
         title="Contamination Risk Checker | Quality Hub" 
         description="Identify potential cross-contamination points in processing, storage, and handling."
         url="https://quality.ruralutilitycost.com/tools/contamination-risk-checker"
+        keywords="contamination risk checker, cross-contamination, food safety hazard, allergen tracking, hazard analysis, processing risk"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Contamination Risk Checker",
+          "url": "https://quality.ruralutilitycost.com/tools/contamination-risk-checker",
+          "description": "Identify potential cross-contamination points in processing, storage, and handling.",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "All"
+        }}
       />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">

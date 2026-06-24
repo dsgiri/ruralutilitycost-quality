@@ -73,6 +73,16 @@ export default function QCInspectionChecklist() {
         title="QC Inspection Checklist | Quality Hub" 
         description="Standardized checklist for routine quality control inspections on the floor."
         url="https://quality.ruralutilitycost.com/tools/qc-inspection-checklist"
+        keywords="QC inspection, quality control checklist, floor inspection, food safety checklist, compliance audit tool"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "QC Inspection Checklist",
+          "url": "https://quality.ruralutilitycost.com/tools/qc-inspection-checklist",
+          "description": "Standardized checklist for routine quality control inspections on the floor.",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "All"
+        }}
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">

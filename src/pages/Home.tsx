@@ -15,6 +15,18 @@ export default function Home() {
         title="Quality Tools & Checklists" 
         description="Standardize your quality operations with practical tools designed for feed, food, and agricultural producers."
         url="https://quality.ruralutilitycost.com/"
+        keywords="quality assurance, QA, QC, agricultural, food production, feed production, batch consistency, quality control tools"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Quality | Rural Utility Cost",
+          "url": "https://quality.ruralutilitycost.com/",
+          "description": "Standardize your quality operations with practical tools designed for feed, food, and agricultural producers.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Rural Utility Cost"
+          }
+        }}
       />
       {/* Hero Section */}
       <section className="bg-slate-900 bg-opacity-95 text-white py-20 relative overflow-hidden">

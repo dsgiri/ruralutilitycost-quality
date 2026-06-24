@@ -8,6 +8,14 @@ export default function Contact() {
         title="Contact" 
         description="Get in touch with the Quality hub team at Rural Utility Cost for questions or support regarding our agricultural QA tools."
         url="https://quality.ruralutilitycost.com/contact"
+        keywords="contact quality hub, support rural utility cost, quality assurance support, QA tool help"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact Quality Hub | Rural Utility Cost",
+          "url": "https://quality.ruralutilitycost.com/contact",
+          "description": "Get in touch with the Quality hub team at Rural Utility Cost for questions or support regarding our agricultural QA tools."
+        }}
       />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-slate-900 mb-8 tracking-tight">Contact</h1>

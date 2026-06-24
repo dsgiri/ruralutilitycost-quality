@@ -47,6 +47,16 @@ export default function QALogbook() {
         title="QA Logbook | Quality Hub" 
         description="Centralized digital log for recording deviations, corrective actions, and QA alerts."
         url="https://quality.ruralutilitycost.com/tools/qa-logbook"
+        keywords="QA logbook, quality assurance log, corrective actions, CAPA tracking, deviation tracker, quality alerts"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "QA Logbook",
+          "url": "https://quality.ruralutilitycost.com/tools/qa-logbook",
+          "description": "Centralized digital log for recording deviations, corrective actions, and QA alerts.",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "All"
+        }}
       />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">

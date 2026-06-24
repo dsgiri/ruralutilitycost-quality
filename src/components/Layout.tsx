@@ -140,16 +140,16 @@ export default function Layout() {
                 <li><Link to="/" className="hover:text-white transition-colors">Quality Tools</Link></li>
                 <li><Link to="/favorites" className="hover:text-white transition-colors">My Favorites</Link></li>
                 <li><Link to="/about" className="hover:text-white transition-colors">About Quality</Link></li>
-                <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+                <li><a href="https://www.ruralutilitycost.com/contact" className="hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
             <div>
               <h3 className="text-white font-medium mb-4 text-sm uppercase tracking-wider">Legal</h3>
               <ul className="space-y-3 text-sm">
-                <li><Link to="/legal" className="hover:text-white transition-colors">Terms of Service</Link></li>
-                <li><Link to="/legal" className="hover:text-white transition-colors">Privacy Policy</Link></li>
-                <li><Link to="/legal" className="hover:text-white transition-colors">Disclaimer</Link></li>
-                <li><Link to="/legal" className="hover:text-white transition-colors">License</Link></li>
+                <li><a href="https://www.ruralutilitycost.com/terms-of-use" className="hover:text-white transition-colors">Terms of Use</a></li>
+                <li><a href="https://www.ruralutilitycost.com/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="https://www.ruralutilitycost.com/disclaimer" className="hover:text-white transition-colors">Disclaimer</a></li>
+                <li><Link to="/legal" className="hover:text-white transition-colors">Quality Hub Legal</Link></li>
               </ul>
             </div>
           </div>

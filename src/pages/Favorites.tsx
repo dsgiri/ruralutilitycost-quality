@@ -36,6 +36,7 @@ export default function Favorites() {
         title="My Favorites" 
         description="Your saved quality assurance and control tools from the Rural Utility Cost hub."
         url="https://quality.ruralutilitycost.com/favorites"
+        noindex={true}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">

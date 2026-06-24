@@ -69,6 +69,16 @@ export default function SupplierQualityScorecard() {
         title="Supplier Quality Scorecard | Quality Hub" 
         description="Evaluate and track vendor performance based on defect rates and compliance."
         url="https://quality.ruralutilitycost.com/tools/supplier-quality-scorecard"
+        keywords="supplier quality scorecard, vendor performance, defect rate tracking, supplier compliance, vendor assessment tool"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Supplier Quality Scorecard",
+          "url": "https://quality.ruralutilitycost.com/tools/supplier-quality-scorecard",
+          "description": "Evaluate and track vendor performance based on defect rates and compliance.",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "All"
+        }}
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">

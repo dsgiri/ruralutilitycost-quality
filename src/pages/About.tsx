@@ -7,6 +7,14 @@ export default function About() {
         title="About Quality Hub" 
         description="Learn about the Quality app, a dedicated hub within the Rural Utility Cost master ecosystem focusing on quality assurance for food and feed."
         url="https://quality.ruralutilitycost.com/about"
+        keywords="about quality hub, rural utility cost quality, quality assurance platform, QA tools about"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About Quality Hub | Rural Utility Cost",
+          "url": "https://quality.ruralutilitycost.com/about",
+          "description": "Learn about the Quality app, a dedicated hub within the Rural Utility Cost master ecosystem focusing on quality assurance for food and feed."
+        }}
       />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-slate-900 mb-8 tracking-tight">About Quality</h1>

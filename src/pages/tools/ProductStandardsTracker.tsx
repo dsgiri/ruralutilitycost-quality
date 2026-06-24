@@ -43,6 +43,16 @@ export default function ProductStandardsTracker() {
         title="Product Standards Tracker | Quality Hub" 
         description="Log and compare key product metrics against required baseline standards."
         url="https://quality.ruralutilitycost.com/tools/product-standards-tracker"
+        keywords="product standards, product specification tracker, quality metrics, baseline standards, quality tracking"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Product Standards Tracker",
+          "url": "https://quality.ruralutilitycost.com/tools/product-standards-tracker",
+          "description": "Log and compare key product metrics against required baseline standards.",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "All"
+        }}
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">

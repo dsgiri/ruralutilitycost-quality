@@ -62,6 +62,16 @@ export default function SamplingPlanBuilder() {
         title="Sampling Plan Builder | Quality Hub" 
         description="Design statistically valid sampling plans for incoming materials and finished goods."
         url="https://quality.ruralutilitycost.com/tools/sampling-plan-builder"
+        keywords="sampling plan, AQL calculator, acceptable quality limit, quality inspection, statistical sampling plan, ANSI/ASQ Z1.4"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Sampling Plan Builder",
+          "url": "https://quality.ruralutilitycost.com/tools/sampling-plan-builder",
+          "description": "Design statistically valid sampling plans for incoming materials and finished goods.",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "All"
+        }}
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
