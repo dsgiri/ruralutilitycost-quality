@@ -1,6 +1,7 @@
 import { QualityTool } from '../types';
 import { Heart, ChevronRight, CheckCircle2, AlertTriangle, ListChecks, FileBox } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 interface ToolCardProps {
   tool: QualityTool;
@@ -75,9 +76,12 @@ export default function ToolCard({ tool }: ToolCardProps) {
       </div>
       
       <div className="px-6 py-4 bg-slate-50 border-t border-slate-100">
-        <button className="w-full flex items-center justify-center gap-2 bg-white border border-slate-300 text-slate-700 py-2.5 px-4 rounded-lg font-medium text-sm hover:bg-slate-50 hover:border-slate-400 group-hover:border-emerald-500 group-hover:text-emerald-700 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        <Link 
+          to={`/tools/${tool.id}`}
+          className="w-full flex items-center justify-center gap-2 bg-white border border-slate-300 text-slate-700 py-2.5 px-4 rounded-lg font-medium text-sm hover:bg-slate-50 hover:border-slate-400 group-hover:border-emerald-500 group-hover:text-emerald-700 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500"
+        >
           Launch Tool <ChevronRight size={16} />
-        </button>
+        </Link>
       </div>
     </div>
   );

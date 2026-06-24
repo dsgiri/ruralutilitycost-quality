@@ -10,6 +10,16 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import { trackPageView } from './utils/analytics';
 
+// Tools
+import BatchConsistencyTracker from './pages/tools/BatchConsistencyTracker';
+import QCInspectionChecklist from './pages/tools/QCInspectionChecklist';
+import SamplingPlanBuilder from './pages/tools/SamplingPlanBuilder';
+import SupplierQualityScorecard from './pages/tools/SupplierQualityScorecard';
+import ContaminationRiskChecker from './pages/tools/ContaminationRiskChecker';
+import ReleaseReadinessChecklist from './pages/tools/ReleaseReadinessChecklist';
+import ProductStandardsTracker from './pages/tools/ProductStandardsTracker';
+import QALogbook from './pages/tools/QALogbook';
+
 function PageTracker() {
   const location = useLocation();
   useEffect(() => {
@@ -30,6 +40,17 @@ export default function App() {
             <Route path="about" element={<About />} />
             <Route path="legal" element={<Legal />} />
             <Route path="contact" element={<Contact />} />
+            
+            {/* Tool Routes */}
+            <Route path="tools/batch-consistency-tracker" element={<BatchConsistencyTracker />} />
+            <Route path="tools/qc-inspection-checklist" element={<QCInspectionChecklist />} />
+            <Route path="tools/sampling-plan-builder" element={<SamplingPlanBuilder />} />
+            <Route path="tools/supplier-quality-scorecard" element={<SupplierQualityScorecard />} />
+            <Route path="tools/contamination-risk-checker" element={<ContaminationRiskChecker />} />
+            <Route path="tools/release-readiness-checklist" element={<ReleaseReadinessChecklist />} />
+            <Route path="tools/product-standards-tracker" element={<ProductStandardsTracker />} />
+            <Route path="tools/qa-logbook" element={<QALogbook />} />
+            
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
