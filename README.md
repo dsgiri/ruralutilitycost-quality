@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Quality | Rural Utility Cost
 
-# Run and deploy your AI Studio app
+Quality assurance and quality control tools for rural and agricultural users. Track product quality, batch consistency, and release readiness.
 
-This contains everything you need to run your app locally.
+## Overview
+This application serves as a dedicated hub within the Rural Utility Cost master ecosystem. It focuses squarely on providing pragmatic quality assurance, quality control, and product standards tools for food, feed, and agricultural outputs.
 
-View your app in AI Studio: https://ai.studio/apps/a536d60b-5335-4140-b440-ffe452b9ae1c
+## Tech Stack
+* React 18
+* TypeScript
+* Vite
+* Tailwind CSS
+* React Router
+* React Helmet Async (SEO)
+* Lucide React (Icons)
 
-## Run Locally
+## Development
+```bash
+# Install dependencies
+npm install
 
-**Prerequisites:**  Node.js
+# Start the development server
+npm run dev
 
+# Build for production
+npm run build
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Documentation
+All project specifications, architecture details, and design guidelines are located in the `/docs` directory. Task tracking is managed in `TASKS.md`.

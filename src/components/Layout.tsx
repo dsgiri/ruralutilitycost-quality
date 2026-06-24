@@ -2,7 +2,6 @@ import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Menu, X, CheckSquare } from 'lucide-react';
 import { useState } from 'react';
 import CookieBanner from './CookieBanner';
-import AdContainer from './AdContainer';
 
 export default function Layout() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -110,17 +109,9 @@ export default function Layout() {
         )}
       </header>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-4">
-        <AdContainer slotId="header-ad" format="auto" />
-      </div>
-
       <main className="flex-1 w-full" id="main-content">
         <Outlet />
       </main>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mb-4">
-        <AdContainer slotId="footer-ad" format="auto" />
-      </div>
 
       <footer className="bg-slate-900 text-slate-300 py-12 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,6 +1,5 @@
 import { TOOLS } from '../data';
 import ToolCard from '../components/ToolCard';
-import AdContainer from '../components/AdContainer';
 import SEO from '../components/SEO';
 import { trackClick } from '../utils/analytics';
 import { ShieldCheck, Target, ArrowRight } from 'lucide-react';
@@ -63,10 +62,6 @@ export default function Home() {
             {TOOLS.map((tool) => (
               <ToolCard key={tool.id} tool={tool} />
             ))}
-          </div>
-
-          <div className="mt-12">
-            <AdContainer slotId="home-tools-bottom" format="auto" />
           </div>
         </div>
       </section>
